@@ -2,15 +2,16 @@ source 'https://rubygems.org'
 
 
 group :default do
-  #gem 'devise'
-  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
   gem 'coffee-rails', '~> 4.1.0'
   gem 'compass-rails'
   gem 'configliere'
   gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
+  gem 'ffi', '= 1.9.6'
   gem 'header'#, :path => '/Users/bvm/workspace/my/header'
   gem 'jbuilder', '~> 2.0'
   gem 'jquery-rails'
+  gem 'newrelic_rpm'
+  gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
   gem 'pg'
   gem 'rails', '4.2.0'
   gem 'sass-rails', '~> 5.0'
@@ -18,7 +19,6 @@ group :default do
   gem 'simple_form'
   gem 'uglifier', '>= 1.3.0'
 end
-gem 'ffi', '= 1.9.6'
 
 group :development, :test do
   gem 'annotate'
