@@ -18,6 +18,7 @@ group :default do
   gem 'simple_form'
   gem 'uglifier', '>= 1.3.0'
 end
+gem 'ffi', '= 1.9.6'
 
 group :development, :test do
   gem 'annotate'
