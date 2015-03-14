@@ -1,0 +1,18 @@
+<%= link_to 'Создать платеж', new_payment_path %>
+
+<% @payments.each do |payment| %>
+  <ul class='payment'>
+    <li>
+      Назначение: <%= payment.title %>
+    </li>
+    <li>
+      Период: <%= payment.period %>
+    </li>
+    <li>
+      Чек: <%= link_to payment.check_file_name, payment.check.url(:original, false) %>
+    </li>
+    <li>
+      Скриншот: <%= link_to (image_tag payment.screenshot.url(:thumb)), payment.screenshot.url, target: '_blank' %>
+    </li>
+  </ul>
+<% end %>

@@ -1,0 +1,9 @@
+/.bundle
+
+
+/log/*
+!/log/.keep
+/tmp
+/config/database.yml
+/config/settings.yml
+/public/system

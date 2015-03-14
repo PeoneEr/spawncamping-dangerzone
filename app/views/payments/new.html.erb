@@ -1,0 +1,7 @@
+<%= simple_form_for @payment do |f| %>
+  <%= f.input :title, input_html: { placeholder: 'Назначение платежа' } %>
+  <%= f.input :period, as: :date %>
+  <%= f.input :check, as: :file %>
+  <%= f.input :screenshot, as: :file %>
+  <%= f.submit %>
+<% end %>
