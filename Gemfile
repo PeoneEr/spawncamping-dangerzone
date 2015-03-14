@@ -24,5 +24,13 @@ group :development, :test do
   gem 'byebug'
   gem 'spring'
   gem 'web-console', '~> 2.0'
+  gem "capistrano-db-tasks", require: false
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-deploytags'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano-sidekiq'
 end
 
